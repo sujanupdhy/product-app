@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './product.service';
 import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

@@ -1,5 +1,11 @@
-<mat-list>
-    <mat-list-item *ngFor="let product of products">
-        {{product.name}}
-    </mat-list-item>
-  </mat-list>
+ <mat-card *ngFor="let product of products" class="example-card">
+   <mat-card-header>
+     <mat-card-title>{{product.name}}</mat-card-title>
+   </mat-card-header>
+   <img mat-card-image src="{{product.hero.href}}">
+   <mat-card-content>
+     <p>
+       {{product.price.selling}}
+     </p>
+   </mat-card-content>
+ </mat-card>
